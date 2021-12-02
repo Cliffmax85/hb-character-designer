@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { makeStatsString } from './utils.js';
+// import { makeStatsString } from './utils.js';
 const headDropdown = document.getElementById('head-dropdown');
 const middleDropdown = document.getElementById('middle-dropdown');
 const bottomDropdown = document.getElementById('bottom-dropdown');
@@ -10,7 +10,7 @@ const reportEl = document.getElementById('report');
 const catchphrasesEl = document.getElementById('catchphrases');
 const catchphraseInput = document.getElementById('catchphrase-input');
 const catchphraseButton = document.getElementById('catchphrase-button');
-const countEl = document.querySelector(`.count`);
+// const countEl = document.querySelector(`.count`);
 
 // set state for how many times the user changes the head, middle, and bottom
 let headCount = 0;
@@ -94,7 +94,7 @@ catchphraseButton.addEventListener('click', () => {
 
 function displayStats() {
     // change the text contentof the reportEl to tell the user how many times they've changed each piece of the state
-    const statsString = makeStatsString(); // call this function with the correct arguments
+    // const statsString = makeStatsString(); // call this function with the correct arguments
     reportEl.textContent = `You changed the head ${headCount} times, the middle ${middleCount} times and the bottom ${bottomCount} times.`;  
 }
 
